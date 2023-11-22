@@ -1,6 +1,28 @@
 import java.util.*;
 
 public class PS1Task {
+
+    public static void CalculateEscapeVelocity(Scanner sc) {
+
+    }
+
+    public static void OxygenAvailabilityCheck(Scanner sc) {
+        
+    }
+
+    public static void ThrusterCheck(Scanner sc) {
+
+    }
+
+    public static void CalculateOrbitalPeriod(Scanner sc) {
+
+    }
+
+    public static void StarMap(Scanner sc) {
+
+    }
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -8,48 +30,46 @@ public class PS1Task {
         do { 
  
             System.out.println("\nSelect the program you want to execute: ");
-            System.out.println("1. Input Book Details");
-            System.out.println("2. Check Availability and Issue Books");
-            System.out.println("3. Return Book");
-            System.out.println("4. Temperature Conversion in Library HVAC System");
-            System.out.println("5. Exit");
+            System.out.println("1. Calculate Escape Velocity");
+            System.out.println("2. Oxygen Availability Check");
+            System.out.println("3. Thruster Check");
+            System.out.println("4. Calculate Orbital Period");
+            System.out.println("5. Star Map");
+            System.out.println("6. Exit");
 
+            System.out.print("Choice: ");
             choice = sc.nextInt();
 
             switch(choice) {
                 case 1:
-                {
-
-                }
-                break;
+                    CalculateEscapeVelocity(sc);
+                    break;
             
                 case 2:
-                {
-
-                }
-                break;
+                    OxygenAvailabilityCheck(sc);
+                    break;
             
                 case 3:
-                {
-
-                }
-                break;
+                    ThrusterCheck(sc); 
+                    break;
             
                 case 4:
-                {
+                    CalculateOrbitalPeriod(sc);
+                    break;
 
-                }
-                break;
-            
                 case 5:
-                break;
+                    StarMap(sc);
+                    break;
+            
+                case 6:
+                System.out.println("Adios!");
+                sc.close();
+                System.exit(0);
             
                 default:
                 System.out.println("Invalid choice! Enter a valid option.");
                 break;
             }
-        } while (choice != 5);
-
-        sc.close();
+        } while (choice != 6);
     }
 }
