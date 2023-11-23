@@ -62,7 +62,7 @@ public class PS1Task {
         int numCelestialBodies = sc.nextInt();
 
         Random random = new Random();
-        System.out.println("Star Map:");
+        System.out.println("\nStar Map:");
         for (int i = 1; i<=numCelestialBodies; i++) {
             // considering the dimensions of space to be 500 X 500
             int x = random.nextInt(500);
