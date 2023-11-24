@@ -80,7 +80,7 @@ public class PS0Task {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // Greeting the librarian
-        System.out.println("----- Welcome to Shoolini's Library Management System -----");
+        System.out.println("\n----- Welcome to Shoolini's Library Management System -----");
         
         int choice;
         do { 
@@ -113,9 +113,9 @@ public class PS0Task {
                     break;
             
                 case 5:
-                System.out.println("Adios!");
-                sc.close();
-                System.exit(0);
+                    System.out.println("Adios!");
+                    sc.close();
+                    System.exit(0);
             
                 default:
                 System.out.println("Invalid choice! Enter a valid option.");

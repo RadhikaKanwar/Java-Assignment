@@ -112,13 +112,13 @@ public class PS1Task {
                     break;
             
                 case 6:
-                System.out.println("Adios!");
-                sc.close();
-                System.exit(0);
+                    System.out.println("Adios!");
+                    sc.close();
+                    System.exit(0);
             
                 default:
-                System.out.println("Invalid choice! Enter a valid option.");
-                break;
+                    System.out.println("Invalid choice! Enter a valid option.");
+                    break;
             }
         } while (choice != 6);
     }
