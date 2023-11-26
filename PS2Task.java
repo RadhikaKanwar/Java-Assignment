@@ -77,6 +77,33 @@ public class PS2Task {
         System.out.print("Enter the number of rows: ");
         int rows = sc.nextInt();
         System.out.println();
+        int num = 0;
+
+        if (rows % 2 == 0) {
+            num = rows/2;
+        } else {
+            num = (rows+1)/2;
+        }
+
+        int counter = 1;
+
+        for (int i=1;i<=num;i++) {
+            for (int j=1;j<=i;j++) {
+                System.out.print(counter + " ");
+                counter++;
+            }
+            System.out.println();
+        }
+
+        counter--;
+       
+        for (int i=rows-num;i>=1;i--) {
+            for (int j=1;j<=i;j++) {
+                counter--;
+                System.out.print(counter + " ");
+            }
+            System.out.println();
+        }
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
