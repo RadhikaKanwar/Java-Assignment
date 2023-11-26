@@ -77,7 +77,7 @@ public class PS2Task {
         System.out.print("Enter the number of rows: ");
         int rows = sc.nextInt();
         System.out.println();
-        int num = 0;
+        int num;
 
         if (rows % 2 == 0) {
             num = rows/2;
