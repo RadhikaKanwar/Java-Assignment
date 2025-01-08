@@ -1,4 +1,4 @@
-# Java-Assignment
+# Java Assignment
 This repository includes the questions that were a part of the Problem Set given by Anurag Sir.
 
 ### Problem Set-0
